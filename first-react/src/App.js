@@ -1,17 +1,19 @@
-import Navbar from "./components/navbar";
+import React from 'react'
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
     <>
-      <Router> 
+      <Router>
         <Navbar/>
+        <Home/>
         <Routes>
-          <Route path="/" exact/>
+          <Route path="/" exact component={Home} />
         </Routes>
       </Router>
-     
     </>
   );
 }
