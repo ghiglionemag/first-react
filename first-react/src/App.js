@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-
 import Footer from '../src/components/Footer';
 import Home from "../src/components/pages/Home";
 import Services from "../src/components/pages/Services";
 import Products from "../src/components/pages/Products";
 import SignUp from "../src/components/pages/SignUp";
+import Navbar from '../src/components/Navbar';
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
           <Route path='/products' element={<Products/>}/>
           <Route path='/sign-up' element={<SignUp/>}/>
         </Routes>
+        <Navbar></Navbar>
         <Footer></Footer>
       </Router>
     </>
